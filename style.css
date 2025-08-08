@@ -1,105 +1,89 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
     color: #333;
-    background-color: #fafafa;
 }
 
-a {
-    color: #0b3d91; /* Deep blue accent */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-}
-
-aside {
-    background: #0b3d91;
+header {
+    background-color: #003366;
     color: white;
-    padding: 20px;
-    flex: 1 1 250px;
+    padding: 2rem 0;
     text-align: center;
 }
 
-aside img {
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-photo {
     border-radius: 50%;
+    border: 3px solid white;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
-aside h1 {
-    font-family: 'Georgia', serif;
-    font-size: 1.5em;
-    margin-bottom: 5px;
+h1 {
+    margin: 0.5rem 0;
 }
 
-aside p {
-    margin: 5px 0;
+.tagline {
+    font-style: italic;
 }
 
-aside .links a {
-    display: block;
-    margin: 10px 0;
+.links a {
     color: white;
+    margin: 0 10px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.btn {
-    display: inline-block;
-    padding: 8px 15px;
-    background: white;
-    color: #0b3d91;
-    border-radius: 4px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #e6e6e6;
-}
-
-main {
-    flex: 3 1 700px;
-    padding: 20px;
-    background: white;
+.links a:hover {
+    text-decoration: underline;
 }
 
 section {
-    margin-bottom: 30px;
+    background: white;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-family: 'Georgia', serif;
-    border-bottom: 2px solid #0b3d91;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    color: #003366;
+    margin-top: 0;
 }
 
-ul {
-    padding-left: 20px;
+.projects .project {
+    margin-bottom: 1rem;
 }
 
-.project {
-    margin-bottom: 15px;
+.projects .project h3 a {
+    color: #003366;
+    text-decoration: none;
 }
 
-.project-title {
-    font-weight: bold;
+.projects .project h3 a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #003366;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
     }
 }
 

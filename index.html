@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halima Ibironke Abdulsalam - Bioinformatician</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halima Ibironke Abdulsalam | Bioinformatician</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
-    <aside>
-        <img src="https://via.placeholder.com/150" alt="Profile Photo">
-        <h1>Halima Ibironke Abdulsalam</h1>
-        <p>Bioinformatician | Genomics & AI in Biology</p>
-        <div class="links">
-            <a href="mailto:halimasalam66@gmail.com">Email Me</a>
-            <a href="https://github.com/halimasalam" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/abdulsalam-halima/" target="_blank">LinkedIn</a>
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
+            <h1>Halima Ibironke Abdulsalam</h1>
+            <p class="tagline">Bioinformatician | Genomics & Multi-omics Research | Machine Learning for Biology</p>
+            <div class="links">
+                <a href="https://github.com/halimasalam" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/abdulsalam-halima/" target="_blank">LinkedIn</a>
+                <a href="CV.pdf" target="_blank">Download CV</a>
+            </div>
         </div>
-        <a href="Halima_Abdulsalam_CV.pdf" class="btn" target="_blank">Download CV</a>
-    </aside>
+    </header>
 
-    <main>
+    <main class="container">
         <section>
-            <h2>About Me</h2>
-            <p>I am a bioinformatician with experience in genomic data analysis, molecular diagnostics, and multi-omics integration. I am passionate about applying machine learning and AI to biological data, particularly in infectious diseases and neurodegenerative disorders. I have worked across academia and industry, from rare disease and cancer genomics at Genomics England to malaria population genomics at MRC Unit The Gambia (LSHTM). My work bridges computational pipelines and biological insight, with a strong focus on reproducibility and collaborative problem-solving.</p>
+            <h2>About</h2>
+            <p>
+                I am a bioinformatician with research and industry experience in genomic data analysis, molecular diagnostics, and multi-omics integration. 
+                I am passionate about applying machine learning and AI to biological data, with a focus on reproducible research and collaborative problem-solving in computational biology.
+            </p>
         </section>
 
         <section>
             <h2>Education</h2>
             <ul>
-                <li><strong>MSc Bioinformatics</strong>, University of Nottingham, 2022 – Dissertation: Comparative Analysis of Variant Calling in Cancer Panels Using Oxford Nanopore Adaptive Sampling vs. Whole-Genome Sequencing</li>
-                <li><strong>BSc Biochemistry (First Class Honours, Overall Best Graduate)</strong>, Crescent University, Abeokuta, 2019 – Dissertation: Effects of Mitoquinol Mesylate (MitoQ) on Diethylnitrosamine-induced Hepatocellular Carcinoma</li>
+                <li><strong>MSc Bioinformatics</strong>, University of Nottingham (2022)</li>
+                <li><strong>BSc Biochemistry</strong>, Crescent University, Abeokuta – First Class Honors, Overall Best Graduate (2019)</li>
             </ul>
         </section>
 
         <section>
-            <h2>Current Role</h2>
-            <p><strong>Bioinformatician</strong> – MRC Unit The Gambia, at the London School of Hygiene and Tropical Medicine (2025–Present). Leading genomic and transcriptomic analyses of Plasmodium species, studying population structure, drug resistance markers, and host-parasite interactions. Mentoring PhD students and early-career researchers in bioinformatics.</p>
+            <h2>Highlighted Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3><a href="https://github.com/halimasalam/AdaptiveSeqVCall" target="_blank">Adaptive Sampling Variant Calling</a></h3>
+                    <p>
+                        Developed a Nextflow-based variant calling pipeline to compare Oxford Nanopore adaptive sampling with whole-genome sequencing for cancer panels. 
+                        Integrated SNV, SV, and DNA methylation analysis using tools such as Clair3, Sniffles, and modbam2bed, with data visualization in Python and R.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/halimasalam/SARS-CoV-2_wastewater_project" target="_blank">SARS-CoV-2 Wastewater Genomics</a></h3>
+                    <p>
+                        Validated Oxford Nanopore sequencing for SARS-CoV-2 variant detection in wastewater samples. 
+                        Automated genomic processing pipelines using Nextflow and developed algorithms for detecting low-frequency variants.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/halimasalam/PlasmoGenomics" target="_blank">Plasmodium Genomics</a></h3>
+                    <p>
+                        Led genomic and transcriptomic analyses of <em>Plasmodium</em> species to investigate drug resistance, genetic diversity, and host-parasite interactions. 
+                        Included metagenomics-based microbiome profiling in malaria-affected children.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/halimasalam/Multiome-ML-Project-scRNA-scATAC" target="_blank">Multiome ML Integration</a></h3>
+                    <p>
+                        Applied machine learning to integrate scRNA-seq and scATAC-seq datasets for cell-type classification and regulatory element prediction. 
+                        Leveraged dimensionality reduction and clustering techniques to uncover multi-omic patterns.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Selected Projects</h2>
-
-            <div class="project">
-                <p class="project-title"><a href="https://github.com/halimasalam/AdaptiveSeqVCall" target="_blank">Adaptive Sampling Variant Calling in Cancer Panels</a></p>
-                <p>Developed a Nextflow pipeline to compare Oxford Nanopore adaptive sampling with whole-genome sequencing for variant detection in 678 COSMIC cancer panel genes. Achieved high concordance in SNV and SV detection, with added methylation profiling capabilities. Clinically confirmed a complex heterozygous deletion in the EYS gene.</p>
-            </div>
-
-            <div class="project">
-                <p class="project-title"><a href="https://github.com/halimasalam/SARS-CoV-2_wastewater_project" target="_blank">Wastewater SARS-CoV-2 Genomic Surveillance</a></p>
-                <p>Validated ONT sequencing for wastewater-based SARS-CoV-2 variant monitoring in collaboration with UKHSA. Compared Illumina and ONT platforms, using custom pipelines for variant detection and demixing. Demonstrated ONT’s feasibility for real-time genomic surveillance in remote settings.</p>
-            </div>
-
-            <div class="project">
-                <p class="project-title"><a href="https://github.com/halimasalam/PlasmoGenomics" target="_blank">Plasmodium Population Genomics</a></p>
-                <p>Analyzing whole-genome and transcriptomic data of Plasmodium species to investigate population structure, selective sweeps, and drug resistance. Integrates genomic data with epidemiological and microbiome profiles to understand malaria dynamics across Africa and Southeast Asia.</p>
-            </div>
-
-            <div class="project">
-                <p class="project-title"><a href="https://github.com/halimasalam/Multiome-ML-Project-scRNA-scATAC" target="_blank">Machine Learning for Single-Cell Multi-omics in Alzheimer’s Disease</a></p>
-                <p>Developing an ML pipeline integrating scRNA-seq and scATAC-seq to classify immune cell subtypes and map Alzheimer’s disease risk variants to cell-type-specific regulatory elements. Utilizes XGBoost and logistic regression for predictive modeling.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills & Tools</h2>
-            <p><strong>Languages:</strong> Python, R, Bash, SQL</p>
-            <p><strong>Bioinformatics Tools:</strong> Nextflow, Snakemake, BLAST, GATK, BWA, IQ-TREE, Bioconductor</p>
-            <p><strong>Databases:</strong> NCBI, Ensembl, UniProt, GEO, TCGA</p>
-            <p><strong>Cloud/HPC:</strong> AWS, GCP, HPC job scheduling</p>
+            <h2>Skills</h2>
+            <p><strong>Languages & Tools:</strong> Python, R, Bash, Nextflow, Snakemake, HPC, AWS, GCP, BLAST, GATK, HMMER</p>
+            <p><strong>Domains:</strong> Genomics, Transcriptomics, Metagenomics, Workflow Automation, Machine Learning for Biology</p>
         </section>
 
         <section>
             <h2>Publications & Presentations</h2>
             <ul>
-                <li>Kerr S, Abdulsalam H, et al. “Validating Oxford Nanopore Technologies Long-Read Sequencing for Monitoring Variant Frequencies of SARS-COV-2 in Wastewater Samples” – Manuscript in preparation.</li>
-                <li>“Genome-wide MicroRNA Expression Profiles in COPD: Early Predictors for Cancer Development” – Presented at the Life Sciences Department, University of Nottingham.</li>
+                <li>Kerr S., Abdulsalam H., Gaskins M., et al. “Validating Oxford Nanopore Technologies Long-Read Sequencing for Monitoring Variant Frequencies of SARS-CoV-2 in Wastewater Samples” – Manuscript in preparation.</li>
+                <li>Genome-wide MicroRNA Expression Profiles in COPD – Presented at University of Nottingham.</li>
             </ul>
         </section>
 
         <section>
             <h2>Teaching & Mentorship</h2>
-            <p>Mentor and train PhD students, interns, and early-career researchers on bioinformatics applications, from NGS pipelines to functional genomics. Developed and delivered hands-on training sessions at MRCG and NIMR.</p>
+            <p>
+                Mentor and train PhD students and early-career researchers in bioinformatics applications for infectious disease research, 
+                and provide NGS analysis mentorship to colleagues at the Nigerian Institute of Medical Research.
+            </p>
         </section>
 
         <section>
@@ -94,8 +102,18 @@
                 <li>Member – Women for Africa Foundation</li>
             </ul>
         </section>
-    </main>
-</div>
 
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:halimasalam66@gmail.com">halimasalam66@gmail.com</a></p>
+            <p>Phone: +2348030626776</p>
+            <p>Location: Lagos, Nigeria</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Halima Ibironke Abdulsalam</p>
+    </footer>
 </body>
 </html>
+
