@@ -34,9 +34,7 @@
     <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
-      <p>
-            I am a bioinformatician specializing in genomic and transcriptomic data analysis, with experience spanning population genomics, malaria genomics, and multi-omics integration. I develop and apply computational pipelines for variant detection, gene regulatory network inference, and molecular diagnostics, leveraging machine learning and AI to reveal insights from complex biological datasets. My current research interests include genome-wide association studies (GWAS), integrative multi-omics, and predictive modeling in infectious disease genomics. I am committed to reproducible research, open science, and building collaborative solutions to advance human health.
-      </p>
+      <p>I am a bioinformatician specializing in genomic and transcriptomic data analysis, with experience spanning population genomics, malaria genomics, and multi-omics integration. I develop and apply computational pipelines for variant detection, gene regulatory network inference, and molecular diagnostics, leveraging machine learning and AI to reveal insights from complex biological datasets. My current research interests include genome-wide association studies (GWAS), integrative multi-omics, and predictive modeling in infectious disease genomics. I am committed to reproducible research, open science, and building collaborative solutions to advance human health.</p>
     </section>
 
     <!-- EDUCATION -->
@@ -168,6 +166,18 @@
       <p class="muted small">© 2025 Halima I. Abdulsalam</p>
     </div>
   </footer>
+
+  <script>
+  const navLinks = document.querySelectorAll('.top-nav a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+  </script>
+
 
 </body>
 </html>
