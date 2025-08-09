@@ -7,20 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <div class="site-wrap">
-      <h1>Halima Ibironke Abdulsalam</h1>
-      <p class="tagline">Bioinformatician | Genomics & Transcriptomics | Machine Learning for Biology</p>
-      <nav class="top-nav">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#publications">Publications</a>
-        <a href="#awards-affiliations">Awards</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
+        <h1>Halima Ibironke Abdulsalam</h1>
+        <p class="tagline">Bioinformatician | Genomics & Multi-omics Research | Machine Learning for Biology</p>
+        <div class="links">
+            <a href="https://github.com/halimasalam" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/abdulsalam-halima/" target="_blank">LinkedIn</a>
+            <a href="CV.pdf" target="_blank">Download CV</a>
+        </div>
     </div>
   </header>
 
@@ -28,13 +24,11 @@
 
     <!-- ABOUT -->
     <section id="about" class="about-section">
-      <div class="about-container">
-        <div class="about-text" style="max-width: 700px; margin: 0 auto; text-align: center;">
-          <h2>About Me</h2>
-          <p>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
             I am a bioinformatician specializing in genomic and transcriptomic data analysis, with experience spanning population genomics, malaria genomics, and multi-omics integration. I develop and apply computational pipelines for variant detection, gene regulatory network inference, and molecular diagnostics, leveraging machine learning and AI to reveal insights from complex biological datasets. My current research interests include genome-wide association studies (GWAS), integrative multi-omics, and predictive modeling in infectious disease genomics. I am committed to reproducible research, open science, and building collaborative solutions to advance human health.
-          </p>
-        </div>
+        </p>
       </div>
     </section>
 
@@ -65,7 +59,7 @@
         <p><strong class="project-label">My Role:</strong> I developed a Nextflow-based variant calling pipeline to analyze Nanopore adaptive sampling data targeting 678 COSMIC cancer panel genes, comparing results with matched whole genome sequencing data. Analyses included single-nucleotide variants (SNVs), structural variants (SVs), CpG methylation, and haplotype phasing.</p>
         <p><strong class="project-label">Outcome:</strong> Adaptive sampling matched WGS performance for SNVs and SVs, while providing additional methylation and haplotype information. The pipeline identified a complex heterozygous deletion in <em>EYS</em> that was later clinically confirmed.</p>
         <p><strong class="project-label">Impact:</strong> Demonstrated that adaptive sampling can deliver accurate, clinically relevant results at reduced cost and sequencing time, with potential for targeted diagnostics in oncology.</p>
-        <p><strong>Tech Stack:</strong> Oxford Nanopore, Nextflow, GATK, Clair3, Sniffles, modbam2bed, Python, R.</p>
+        <p><strong class="project-label">Tech Stack:</strong> Oxford Nanopore, Nextflow, GATK, Clair3, Sniffles, modbam2bed, Python, R.</p>
         <p><a href="https://github.com/halimasalam/AdaptiveSeqVCall" target="_blank">View on GitHub</a></p>
       </div>
 
@@ -77,7 +71,7 @@
         <p><strong class="project-label">My Role:</strong> As a bioinformatician at the University of Nottingham, I co-led the bioinformatics analysis within a UK Health Security Agency–funded collaboration involving the Universities of Exeter and Liverpool. I processed both synthetic wastewater samples (spiked with Alpha, Beta, Delta, and Omicron variants) and real environmental samples from multiple UK locations. Adapted the EasySeq™ RC-PCR Illumina protocol for ONT sequencing and integrated it with the ARTIC field bioinformatics pipeline. For Illumina, executed FASTQ merging, adapter trimming, alignment, sorting, primer trimming, variant calling, and lineage deconvolution, while for Nanopore data, followed ARTIC-compatible workflows. Developed custom Python and R scripts for processing, visualization, and statistical analysis.</p>
         <p><strong class="project-label">Outcome:</strong> ONT sequencing delivered variant detection performance comparable to Illumina, even in low-viral-load wastewater samples, while reducing turnaround time and infrastructure requirements. The approach successfully resolved complex mixed samples and co-circulating SARS-CoV-2 lineages within a single wastewater sample.</p>
         <p><strong class="project-label">Impact:</strong> Demonstrated that portable ONT sequencing is a viable option for decentralized, field-based genomic surveillance — enabling rapid response to emerging pathogens, especially in resource-limited or remote settings.</p>
-        <p><strong>Tech Stack:</strong> Oxford Nanopore, Illumina, pigz, fastp, bwa-mem, Samtools, ivar, VarScan, Freyja, Python, R.</p>
+        <p><strong class="project-label">Tech Stack:</strong> Oxford Nanopore, Illumina, pigz, fastp, bwa-mem, Samtools, ivar, VarScan, Freyja, Python, R.</p>
         <p><a href="https://github.com/halimasalam/SARS-CoV-2_wastewater_project" target="_blank">View on GitHub</a></p>
         </div>
 
@@ -89,7 +83,7 @@
         <p><strong class="project-label">My Role:</strong> At the MRC Unit The Gambia (London School of Hygiene & Tropical Medicine), I analyze whole-genome and transcriptomic datasets from <em>P. falciparum</em>, <em>P. malariae</em>, and <em>P. vivax</em> collected across Africa and Southeast Asia. My work includes population structure analyses (PCA, ADMIXTURE), within-host diversity metrics (F<sub>ws</sub>), identity-by-descent (IBD) detection, selective sweep detection, and drug-resistance marker profiling (crt, mdr1, dhfr, dhps, kelch13). I also conduct evolutionary analysis of malaria vaccine candidate antigens (PfAMA1, PfCelTOS), assessing population structure, interconnectivity, genetic differentiation, selection pressures, and predicting B-cell epitopes. Additionally, I integrate metagenomic data to study gut microbiome composition in malaria cases and support continent-wide analyses of pfhrp2/pfhrp3 gene deletions.</p>
         <p><strong class="project-label">Outcome:</strong> Generated high-resolution population structure maps of <em>Plasmodium</em> species, identified signals of positive selection at drug-resistance loci, and assessed genetic diversity and selection in pfhrp2/3 across African isolates. Vaccine antigen analyses revealed geographic patterns in diversity, population connectivity, and immune epitope distribution, informing vaccine design strategies. Transcriptomic analyses identified downregulation of rifin gene families in asymptomatic <em>P. falciparum</em> infections, suggesting a role in immune evasion. Integrated microbiome-genome analyses also revealed microbial community shifts associated with malaria severity.</p>
         <p><strong class="project-label">Impact:</strong> Contributed to genomic surveillance frameworks for malaria, supporting drug policy, diagnostic strategies, and vaccine candidate evaluation. I also contributed to manuscript preparation for multiple outputs from this project, all of which are in preparation for publication.</p>
-        <p><strong>Tech Stack:</strong> Nextflow, Snakemake, GATK, BWA, ADMIXTURE, IQ-TREE, Epitope prediction tools, R, Python.</p>
+        <p><strong class="project-label">Tech Stack:</strong> Nextflow, Snakemake, GATK, BWA, ADMIXTURE, IQ-TREE, Epitope prediction tools, R, Python.</p>
         <p><a href="https://github.com/halimasalam/PlasmoGenomics" target="_blank">View on GitHub</a></p>
       </div>
 
@@ -101,7 +95,7 @@
         <p><strong class="project-label">My Role:</strong> I designed and implemented a supervised machine learning pipeline to integrate transcriptomic and chromatin accessibility features from single-cell PBMC data. Built baseline multi-class logistic regression and an optimized XGBoost classifier to predict immune cell subtypes. I mapped Alzheimer’s disease GWAS SNPs to cell-type-specific ATAC peaks and genes, identifying potential regulatory elements linked to disease risk.</p>  
         <p><strong class="project-label">Outcome:</strong> The multimodal XGBoost classifier achieved ~92% accuracy in immune cell classification. Top predictive RNA features included <em>PAX5</em>, <em>BANK1</em>, <em>MS4A1</em> (B cells); <em>LYZ</em>, <em>VCAN</em>, <em>CDKN1C</em> (monocytes); and <em>GNLY</em>, <em>GZMB</em>, <em>ZEB2</em> (cytotoxic T/NK cells). Top ATAC features included <em>KLRG1</em>, <em>IL2RB</em> (T/NK function), <em>HCK</em>, <em>ARHGAP24</em> (monocyte-related), and <em>LINC02446</em> (a potential regulatory ncRNA). Integration with Alzheimer’s GWAS identified 14 overlapping genes including <em>BANK1</em>, <em>MEF2C</em>, <em>ANK3</em>, and <em>TCF7L2</em> with distinct immune cell-type enrichments, highlighting monocytes, dendritic cells, and B cells as potential mediators of disease risk.</p>
         <p><strong class="project-label">Impact:</strong> This project demonstrated the utility of combining single-cell multi-omics and ML to connect genetic risk with cell-type-specific regulatory programs, providing a framework adaptable to other complex diseases.</p>
-        <p><strong>Tech Stack:</strong> Python, R, Seurat, Signac, Scanpy, scikit-learn, XGBoost, BEDTools, MACS2.</p>
+        <p><strong class="project-label">Tech Stack:</strong> Python, R, Seurat, Signac, Scanpy, scikit-learn, XGBoost, BEDTools, MACS2.</p>
         <p><a href="https://github.com/halimasalam/Multiome-ML-Project-scRNA-scATAC" target="_blank">View on GitHub</a></p>
       </div>
     </section>
