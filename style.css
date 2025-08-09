@@ -106,10 +106,13 @@ h2{ color: var(--accent); margin-top: 0; }
 .project-label {
   display: block;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   font-size: 0.85rem;
-  text-transform: uppercase;
   margin-bottom: 0.4em;
+  color: var(--accent);
+}
+
+.font-label {
   color: var(--accent);
 }
 
